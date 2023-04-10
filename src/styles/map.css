@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../assets/img/home-page-map.png) top center fixed;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.title-container h1 {
+  margin: 0rem 0rem 2rem 10rem;
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 90px;
+}
+
+.title-container h4 {
+  margin: 5rem 0rem 0rem 10rem;
+  font-family: 'Cabin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+div.container-button {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  filter: saturate(0.5);
+  transition: 0.4s;
+}
+
+img:hover {
+  filter: brightness(1);
+  transition: 0.4s;
+}
+
+.item {
+  justify-items: center;
+  align-items: center;
+  display: block;
+  width: 23%;
+
+}
+
+section.container {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.448) !important;
+  backdrop-filter: blur(8px);
+  min-height: 100vh;
+  border: 1px solid #000000;
+}
+
+.item .title-text, .item.subtitle-text {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.title-text,
+.subtitle-text {
+  font-family: 'Jost', sans-serif;
+}
+
+.info-box__img {
+    border-bottom: 0.8px solid #ddd;
+    height: 250px;
+    width: 100%;
+}
+
+.info-box__img img {
+    width: 100%;
+}
+
+.info-box__header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 11px;
+    color: #666;
+}
+
+.info-box__content {
+    padding: 12px 20px;
+    flex: 1;
+}
+
+.info-box__title {
+    line-height: normal;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 9px;
+    font-size: 20px;
+    color: #444;
+}
+
+.info-box__description {
+    letter-spacing: -0.3px;
+    font-weight: normal;
+    line-height: 1.25;
+    overflow: hidden;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #888;
+}

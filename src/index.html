@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/fav-ico.png" type="image/x-icon">
+
+  <title>Home</title>
+
+  <link rel="stylesheet" href="./styles/home.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+</head>
+
+<body>
+<!-- Navbar - Bootstrap -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <img src="./assets/img/Logo/LOGO (1).png" id="logo" alt="Logo Gulliver Traveler">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hospedagens</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Aluguel de Carros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Roteiros Turisticos</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Login
+      </span>
+    </div>
+  </div>
+</nav>
+        <!-- Accessibilidade -->
+        <div id="dropdown-toolbar" class="dropdown-toolbar-left" role="navigation" aria-label="">
+          <button class="btn  dropdown-toolbar-toggle" type="button" id="accessibility" data-toggle="dropdown">
+            <a title="ACESSIBILIDADE">
+              <svg id="acessibility-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor"
+                width="1em">
+                <path
+                  d="M50 8.1c23.2 0 41.9 18.8 41.9 41.9 0 23.2-18.8 41.9-41.9 41.9C26.8 91.9 8.1 73.2 8.1 50S26.8 8.1 50 8.1M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm0 11.3c-21.4 0-38.7 17.3-38.7 38.7S28.6 88.7 50 88.7 88.7 71.4 88.7 50 71.4 11.3 50 11.3zm0 8.9c4 0 7.3 3.2 7.3 7.3S54 34.7 50 34.7s-7.3-3.2-7.3-7.3 3.3-7.2 7.3-7.2zm23.7 19.7c-5.8 1.4-11.2 2.6-16.6 3.2.2 20.4 2.5 24.8 5 31.4.7 1.9-.2 4-2.1 4.7-1.9.7-4-.2-4.7-2.1-1.8-4.5-3.4-8.2-4.5-15.8h-2c-1 7.6-2.7 11.3-4.5 15.8-.7 1.9-2.8 2.8-4.7 2.1-1.9-.7-2.8-2.8-2.1-4.7 2.6-6.6 4.9-11 5-31.4-5.4-.6-10.8-1.8-16.6-3.2-1.7-.4-2.8-2.1-2.4-3.9.4-1.7 2.1-2.8 3.9-2.4 19.5 4.6 25.1 4.6 44.5 0 1.7-.4 3.5.7 3.9 2.4.7 1.8-.3 3.5-2.1 3.9z">
+                </path>
+              </svg>
+            </a>
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+            <a href="#" class="dropdown-item" data-action="resize-plus" data-action-group="resize" tabindex="-1"
+              onclick="aumentarFonte()">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M256 200v16c0 4.25-3.75 8-8 8h-56v56c0 4.25-3.75 8-8 8h-16c-4.25 0-8-3.75-8-8v-56h-56c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h56v-56c0-4.25 3.75-8 8-8h16c4.25 0 8 3.75 8 8v56h56c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z">
+                  </path>
+                </svg>
+              </span>
+              <span>
+                AUMENTAR TEXTO
+              </span>
+            </a>
+
+            <a href="#" class="dropdown-item" data-action="resize-minus" data-action-group="resize" tabindex="-1"
+              onclick="diminuirFonte()">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M256 200v16c0 4.25-3.75 8-8 8h-144c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h144c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z">
+                  </path>
+                </svg>
+              </span>
+              <span>
+                DIMINUIR TEXTO
+              </span>
+            </a>
+
+            <a href="#" class="dropdown-item" data-action="grayscale" data-action-group="schema" tabindex="-1">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M15.75 384h-15.75v-352h15.75v352zM31.5 383.75h-8v-351.75h8v351.75zM55 383.75h-7.75v-351.75h7.75v351.75zM94.25 383.75h-7.75v-351.75h7.75v351.75zM133.5 383.75h-15.5v-351.75h15.5v351.75zM165 383.75h-7.75v-351.75h7.75v351.75zM180.75 383.75h-7.75v-351.75h7.75v351.75zM196.5 383.75h-7.75v-351.75h7.75v351.75zM235.75 383.75h-15.75v-351.75h15.75v351.75zM275 383.75h-15.75v-351.75h15.75v351.75zM306.5 383.75h-15.75v-351.75h15.75v351.75zM338 383.75h-15.75v-351.75h15.75v351.75zM361.5 383.75h-15.75v-351.75h15.75v351.75zM408.75 383.75h-23.5v-351.75h23.5v351.75zM424.5 383.75h-8v-351.75h8v351.75zM448 384h-15.75v-352h15.75v352z">
+                  </path>
+                </svg>
+              </span>
+              <span>
+                ESCALA DE CINZA
+              </span>
+            </a>
+
+            <a href="#" class="dropdown-item" data-action="high-contrast" data-action-group="schema" tabindex="-1">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M192 360v-272c-75 0-136 61-136 136s61 136 136 136zM384 224c0 106-86 192-192 192s-192-86-192-192 86-192 192-192 192 86 192 192z">
+                  </path>
+                </svg>
+              </span>
+              <span>
+                ALTO CONTRASTE
+              </span>
+            </a>
+
+            <a href="#" class="dropdown-item" data-action="negative-contrast" data-action-group="schema" tabindex="-1">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M416 240c-23.75-36.75-56.25-68.25-95.25-88.25 10 17 15.25 36.5 15.25 56.25 0 61.75-50.25 112-112 112s-112-50.25-112-112c0-19.75 5.25-39.25 15.25-56.25-39 20-71.5 51.5-95.25 88.25 42.75 66 111.75 112 192 112s149.25-46 192-112zM236 144c0-6.5-5.5-12-12-12-41.75 0-76 34.25-76 76 0 6.5 5.5 12 12 12s12-5.5 12-12c0-28.5 23.5-52 52-52 6.5 0 12-5.5 12-12zM448 240c0 6.25-2 12-5 17.25-46 75.75-130.25 126.75-219 126.75s-173-51.25-219-126.75c-3-5.25-5-11-5-17.25s2-12 5-17.25c46-75.5 130.25-126.75 219-126.75s173 51.25 219 126.75c3 5.25 5 11 5 17.25z">
+                  </path>
+                </svg>
+              </span>
+              <span>
+                CONTRASTE NEGATIVO
+              </span>
+            </a>
+
+            <a href="#" class="dropdown-item" data-action="light-background" data-action-group="schema" tabindex="-1">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M184 144c0 4.25-3.75 8-8 8s-8-3.75-8-8c0-17.25-26.75-24-40-24-4.25 0-8-3.75-8-8s3.75-8 8-8c23.25 0 56 12.25 56 40zM224 144c0-50-50.75-80-96-80s-96 30-96 80c0 16 6.5 32.75 17 45 4.75 5.5 10.25 10.75 15.25 16.5 17.75 21.25 32.75 46.25 35.25 74.5h57c2.5-28.25 17.5-53.25 35.25-74.5 5-5.75 10.5-11 15.25-16.5 10.5-12.25 17-29 17-45zM256 144c0 25.75-8.5 48-25.75 67s-40 45.75-42 72.5c7.25 4.25 11.75 12.25 11.75 20.5 0 6-2.25 11.75-6.25 16 4 4.25 6.25 10 6.25 16 0 8.25-4.25 15.75-11.25 20.25 2 3.5 3.25 7.75 3.25 11.75 0 16.25-12.75 24-27.25 24-6.5 14.5-21 24-36.75 24s-30.25-9.5-36.75-24c-14.5 0-27.25-7.75-27.25-24 0-4 1.25-8.25 3.25-11.75-7-4.5-11.25-12-11.25-20.25 0-6 2.25-11.75 6.25-16-4-4.25-6.25-10-6.25-16 0-8.25 4.5-16.25 11.75-20.5-2-26.75-24.75-53.5-42-72.5s-25.75-41.25-25.75-67c0-68 64.75-112 128-112s128 44 128 112z">
+                  </path>
+                </svg>
+              </span>
+              <span>
+                FUNDO CLARO
+              </span>
+            </a>
+
+            <a href="#" class="dropdown-item" data-action="links-underline" data-action-group="toggle" tabindex="-1">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M364 304c0-6.5-2.5-12.5-7-17l-52-52c-4.5-4.5-10.75-7-17-7-7.25 0-13 2.75-18 8 8.25 8.25 18 15.25 18 28 0 13.25-10.75 24-24 24-12.75 0-19.75-9.75-28-18-5.25 5-8.25 10.75-8.25 18.25 0 6.25 2.5 12.5 7 17l51.5 51.75c4.5 4.5 10.75 6.75 17 6.75s12.5-2.25 17-6.5l36.75-36.5c4.5-4.5 7-10.5 7-16.75zM188.25 127.75c0-6.25-2.5-12.5-7-17l-51.5-51.75c-4.5-4.5-10.75-7-17-7s-12.5 2.5-17 6.75l-36.75 36.5c-4.5 4.5-7 10.5-7 16.75 0 6.5 2.5 12.5 7 17l52 52c4.5 4.5 10.75 6.75 17 6.75 7.25 0 13-2.5 18-7.75-8.25-8.25-18-15.25-18-28 0-13.25 10.75-24 24-24 12.75 0 19.75 9.75 28 18 5.25-5 8.25-10.75 8.25-18.25zM412 304c0 19-7.75 37.5-21.25 50.75l-36.75 36.5c-13.5 13.5-31.75 20.75-50.75 20.75-19.25 0-37.5-7.5-51-21.25l-51.5-51.75c-13.5-13.5-20.75-31.75-20.75-50.75 0-19.75 8-38.5 22-52.25l-22-22c-13.75 14-32.25 22-52 22-19 0-37.5-7.5-51-21l-52-52c-13.75-13.75-21-31.75-21-51 0-19 7.75-37.5 21.25-50.75l36.75-36.5c13.5-13.5 31.75-20.75 50.75-20.75 19.25 0 37.5 7.5 51 21.25l51.5 51.75c13.5 13.5 20.75 31.75 20.75 50.75 0 19.75-8 38.5-22 52.25l22 22c13.75-14 32.25-22 52-22 19 0 37.5 7.5 51 21l52 52c13.75 13.75 21 31.75 21 51z">
+                  </path>
+                </svg>
+              </span>
+              <span>
+                LINKS SUBLINHADOS
+              </span>
+            </a>
+
+            <a href="#" class="dropdown-item" data-action="readable-font" data-action-group="toggle" tabindex="-1"
+              onclick="dislexia()">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M181.25 139.75l-42.5 112.5c24.75 0.25 49.5 1 74.25 1 4.75 0 9.5-0.25 14.25-0.5-13-38-28.25-76.75-46-113zM0 416l0.5-19.75c23.5-7.25 49-2.25 59.5-29.25l59.25-154 70-181h32c1 1.75 2 3.5 2.75 5.25l51.25 120c18.75 44.25 36 89 55 133 11.25 26 20 52.75 32.5 78.25 1.75 4 5.25 11.5 8.75 14.25 8.25 6.5 31.25 8 43 12.5 0.75 4.75 1.5 9.5 1.5 14.25 0 2.25-0.25 4.25-0.25 6.5-31.75 0-63.5-4-95.25-4-32.75 0-65.5 2.75-98.25 3.75 0-6.5 0.25-13 1-19.5l32.75-7c6.75-1.5 20-3.25 20-12.5 0-9-32.25-83.25-36.25-93.5l-112.5-0.5c-6.5 14.5-31.75 80-31.75 89.5 0 19.25 36.75 20 51 22 0.25 4.75 0.25 9.5 0.25 14.5 0 2.25-0.25 4.5-0.5 6.75-29 0-58.25-5-87.25-5-3.5 0-8.5 1.5-12 2-15.75 2.75-31.25 3.5-47 3.5z">
+                  </path>
+                </svg>
+              </span>
+              <span>
+                FONTE LEGÍVEL (Dislexia)
+              </span>
+            </a>
+
+            <a href="#" class="dropdown-item" data-action="reset" tabindex="-1" onclick="inter()">
+              <span>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448">
+                  <path fill="currentColor"
+                    d="M384 224c0 105.75-86.25 192-192 192-57.25 0-111.25-25.25-147.75-69.25-2.5-3.25-2.25-8 0.5-10.75l34.25-34.5c1.75-1.5 4-2.25 6.25-2.25 2.25 0.25 4.5 1.25 5.75 3 24.5 31.75 61.25 49.75 101 49.75 70.5 0 128-57.5 128-128s-57.5-128-128-128c-32.75 0-63.75 12.5-87 34.25l34.25 34.5c4.75 4.5 6 11.5 3.5 17.25-2.5 6-8.25 10-14.75 10h-112c-8.75 0-16-7.25-16-16v-112c0-6.5 4-12.25 10-14.75 5.75-2.5 12.75-1.25 17.25 3.5l32.5 32.25c35.25-33.25 83-53 132.25-53 105.75 0 192 86.25 192 192z">
+                  </path>
+                </svg>
+              </span>
+              <span>RESET</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/hospedagens/ape-paulista-1.webp" class="d-block w-100" width="100" height="480"
+            alt="Ape Paulista">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/hospedagens/ibis-styles-1.jpg" class="d-block w-100" width="100" height="480"
+            alt="Ibis Styles">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/hospedagens/pullman-1.jpg" class="d-block w-100" width="100" height="480"
+            alt="Pullman">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="container">
+      <div class="userlocation">
+      <span>Você atualmente está em: </span>
+      <h2 id="currentLocation"></h2> 
+    </div>
+  </section>
+
+
+  <section class="grid-container-car">
+    <div class="header-titles-car header-container">
+      <div class="car-container">
+        <img width="100%" src="./assets/img/hospedagens/pexels-roman-odintsov-4553618 1.png" alt="Malas de viagem">
+      </div>
+      <div class="header-text">
+        <h2 class="title-car">Alugue um carro e conheça mais lugares na sua viagem</h2>
+        <br>
+        <p class="subtitle">
+          Sinta a liberdade de conhecer uma cidade dirigindo
+          por ela. Com o seu carro de aluguel você poderá controlar
+          o tempo e organizar o seu próprio roteiro para visitar e
+          conhecer tudo o que quiser. Poderá escolher aluguel de
+          carros pequenos, para poucas pessoas, ou grandes, se você
+          deseja ir com amigos ou com a família. Desfrute do seu
+          destino no seu ritmo e
+          aproveite para conhecer muito mais na sua viagem! Você não vai se
+          arrepender de alugar um carro.<br><br>
+          Antes de alugar um carro, leve em conta o número de passageiros. Isso lhe ajudará a decidir o tamanho do
+          carro. Além
+          disso, fique atento aos seguros inclusos no contrato de locação de carros, assim como os benefícios de
+          quilometragem
+          ilimitada, tipo de câmbio e modalidade de entrega do veículo. </p>
+      </div>
+    </div>
+
+    <div class="grid-containercar grid-">
+      <div class="cardcar">
+        <img src="./assets/img/golf.jpg" class="card-img-top" alt="imagem de um carro">
+        <div class="card-body">
+          <h5 class="card-title">Volkswagen Gol</h5>
+          <p class="card-text">Potente motorização, onde podemos contar com um motor 1.4L TSI Total Flex, que consegue
+            uma potência máxima de
+            300 cv.</p>
+          <br>
+          <div class="d-grid gap-2 col-12 mx-auto">
+            <button type="button" onclick="location.href=''" class="btn btn-primary btn-lg">Reservar
+            </button>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="cardcar">
+        <img src="./assets/img/mobi.jpg" class="card-img-top" alt="imagem de um carro">
+        <div class="card-body">
+          <h5 class="card-title">Fiat Mobi</h5>
+          <p class="card-text">Economico, compacto, com Ar Condicionado e Direção Hidraulica,
+            ideal para viagens em familia.</p>
+          <br>
+          <div class="d-grid gap-2 col-12 mx-auto">
+            <button type="button" onclick="location.href=''" class="btn btn-primary btn-lg">Reservar
+            </button>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="cardcar">
+        <img src="./assets/img/onix.jpg" class="card-img-top" alt="imagem de um carro">
+        <div class="card-body">
+          <h5 class="card-title">Chevrolet Onix</h5>
+          <p class="card-text">Muita segurança com seis airbags e a tecnologia MyLink, além de economico em combustível.
+          </p>
+          <br>
+          <div class="d-grid gap-2 col-12 mx-auto">
+
+            <button type="button" onclick="location.href=''" class="btn btn-primary btn-lg">Reservar
+            </button>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="cardcar">
+        <img src="./assets/img/argo.jpg" class="card-img-top" alt="imagem de um carro">
+        <div class="card-body">
+          <h5 class="card-title">Fiat Argo</h5>
+          <p class="card-text">Experimente uma condução prazerosa de verdade com o Motor 1.3 Firefly com 107 cv de
+            potência e consumo de até 14,3 km/l.</p>
+          <br>
+          <div class="d-grid gap-2 col-12 mx-auto">
+
+            <button type="button" onclick="location.href=''" class="btn btn-primary btn-lg">Reservar
+            </button>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="container header flex">
+      <div class="header-titles">
+        <h2 class="title">Encontre a sua <br> hospedagem perfeita</h1>
+          <p class="subtitle">Encontre aqui o hotel para a sua estadia</p>
+      </div>
+
+      <div class="suitcases">
+        <img class="suitcases" src="./assets/img/hospedagens/top.png" alt="Malas de viagem">
+      </div>
+    </div>
+    <h3 class="accommodation__title">Hospedagens: São Paulo, SP</h3>
+  </section>
+
+
+  <section class="grid-container bottom__space">
+    <div class="card-hosting">
+      <img src="./assets/img/castle-ward-2.jpg" class="card-img-top" alt="Ape Paulista">
+      <div class="card-body">
+        <div class="inline">
+          <p class="star__container">
+            <em class="fa-solid fa-star"></em>
+            <em class="fa-solid fa-star"></em>
+            <em class="fa-solid fa-star"></em>
+            <em class="fa-solid fa-star"></em>
+            <em class="fas fa-star"></em>
+            <span>4,0</span>
+          </p>
+
+        </div>
+        <h2 class="info-box__title">Conheça lugares atráves de Game Of Thrones</h2>
+        <hr>
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <button onclick="location.href='./pages/explore.html'" target="_blank" class="btn-explorer" type="button">
+            Explorar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-hosting">
+      <a href="./pages/hospedagem/ape-paulista.html" target="_blank">
+
+        <img src="./assets/img/hospedagens/ape-paulista-1.webp" class="card-img-top" alt="Ape Paulista">
+        <div class="card-body">
+          <div class="inline">
+            <p class="star__container">
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fas fa-star"></em>
+              <span>4,0</span>
+            </p>
+
+          </div>
+          <h2 class="info-box__title">Ape Paulista Bela Cintra</h2>
+          <hr>
+          <div class="inline">
+            <div class="icon">
+              <p><em class="fa-sharp fa-solid fa-person-swimming"></em> Piscina</p>
+              <p><em class="fa-solid fa-wind"></em> Ar condicionado</p>
+              <p><em class="fa-solid fa-wifi"></em> WI-FI gratuito</p>
+            </div>
+            <div>
+              <p class="price">270,00</p>
+              <p class="by-night">por noite</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card-hosting">
+      <a href="./pages/hospedagem/ibis-styles.html" target="_blank">
+        <img src="./assets/img/hospedagens/ibis-styles-1.jpg" class="card-img-top" alt="Ape Paulista">
+        <div class="card-body">
+          <div class="inline">
+            <p class="star-duotone">
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fas fa-star"></em>
+              <span>4,0</span>
+            </p>
+
+          </div>
+          <h2 class="info-box__title">Ibis Styles Barra Funda</h2>
+          <hr>
+          <div class="inline">
+            <div class="icon">
+              <p><em class="fa-sharp fa-solid fa-person-swimming"></em> Piscina</p>
+              <p><em class="fa-solid fa-wind"></em> Ar condicionado</p>
+              <p><em class="fa-solid fa-wifi"></em> WI-FI gratuito</p>
+            </div>
+            <div>
+              <p class="price">290,00</p>
+              <p class="by-night">por noite</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="card-hosting">
+      <a href="./pages/hospedagem/pullman.html" target="_blank">
+        <img src="./assets/img/hospedagens/pullman-1.jpg" class="card-img-top" alt="Ape Paulista">
+        <div class="card-body">
+          <div class="inline">
+            <p class="star__container">
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fas fa-star"></em>
+              <em class="fas fa-star"></em>
+              <span>3,0</span>
+            </p>
+
+          </div>
+          <h2 class="info-box__title">Pullman Sao Paulo Ibirapuera</h2>
+          <hr>
+          <div class="inline">
+            <div class="icon">
+              <p><em class="fa-sharp fa-solid fa-person-swimming"></em> Piscina</p>
+              <p><em class="fa-solid fa-wind"></em> Ar condicionado</p>
+              <p><em class="fa-solid fa-wifi"></em> WI-FI gratuito</p>
+            </div>
+            <div>
+              <p class="price">688,00</p>
+              <p class="by-night">por noite</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="card-hosting">
+      <a href="./pages/hospedagem/bar-brahma.html" target="_blank">
+        <img src="./assets/img/hospedagens/bar-brahma-1.webp" class="card-img-top" alt="Hotel Oficial Bar Brahma">
+        <div class="card-body">
+          <div class="inline">
+            <p class="star__container">
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <span>5,0</span>
+            </p>
+
+          </div>
+          <h2 class="info-box__title">Hotel Oficial do Bar Brahma</h2>
+          <hr>
+          <div class="inline">
+            <div class="icon">
+              <p><em class="fa-sharp fa-solid fa-person-swimming"></em> Piscina</p>
+              <p><em class="fa-solid fa-wind"></em> Ar condicionado</p>
+              <p><em class="fa-solid fa-wifi"></em> WI-FI gratuito</p>
+            </div>
+            <div>
+              <p class="price">800,00</p>
+              <p class="by-night">por noite</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="card-hosting">
+      <a href="./pages/hospedagem/staybridges.html" target="_blank">
+        <img src="./assets/img/hospedagens/staybridges-1.webp" class="card-img-top" alt="Hotel Oficial Bar Brahma">
+        <div class="card-body">
+          <div class="inline">
+            <p class="star__container">
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <em class="fa-solid fa-star"></em>
+              <span>5,0</span>
+            </p>
+
+          </div>
+          <h2 class="info-box__title">Staybridges Suítes São Paulo</h2>
+          <hr>
+          <div class="inline">
+            <div class="icon">
+              <p><em class="fa-sharp fa-solid fa-person-swimming"></em> Piscina</p>
+              <p><em class="fa-solid fa-wind"></em> Ar condicionado</p>
+              <p><em class="fa-solid fa-wifi"></em> WI-FI gratuito</p>
+            </div>
+            <div>
+              <p class="price">900,00</p>
+              <p class="by-night">por noite</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+  </section>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+    const aumentarFonte = () => {
+      let elementHtml = document.querySelector("html");
+      elementHtml.style.fontSize = "20px";
+    }
+
+    const diminuirFonte = () => {
+      let elementHtml = document.querySelector("html");
+      elementHtml.style.fontSize = "15px";
+    }
+
+    const dislexia = () => {
+      let elementBody = document.querySelector('body');
+      elementBody.style.fontFamily = 'opendyslexicaltaregular';
+      elementBody.style.fontSize = '15px';
+    }
+
+    const inter = () => {
+      let elementBody = document.querySelector('body');
+      elementBody.style.fontFamily = 'Inter, Arial, Tahoma, sans-serif';
+      elementBody.style.fontSize = '15px';
+    }
+  </script>
+</body>
+
+</html>
+
+<!-- Footer  - Bootstrap -->
+
+<body>
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center tect-md-left">
+      <div class="row text=center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Gulliver Traveler</h5>
+
+
+          <p> Somos uma empresa que oferece serviços de hospedagens, aluguel de carros e roteiros turisticos. </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Serviços</h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Sobre Nós </a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Hospedagens </a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Aluguel de Carros </a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-wight-bold text-warning"> Acessos </h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Sua Conta </a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Acesso Prime </a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Fale Conosco </a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Ajuda </a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-wight-bold text-warning"> Contatos</h5>
+          <p>
+            <i class="fas fa-home mr-3"></i> São Paulo, BR 02212-333
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> contato@gullivertraveler.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> +55 11 999292999
+          </p>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p> Copyright ©️ All right reserved by: 
+              <a href="#" style="text-decoration: none;">
+                <strong class="text-warning"> Gulliver Traveler </strong>
+              </a></p>
+          </div>
+
+            <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-right">
+
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href= "#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class= "fab fa-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href= "#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class= "fab fa-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href= "#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class= "fab fa-linkedin"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href= "#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class= "fab fa-google-plus"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href= "#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class= "fab fa-instagram"></i></a>
+                    <li class="list-inline-item">
+                      <a href= "#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class= "fab fa-youtube"></i></a>
+                    </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           </div>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </footer>
+
+<script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4d8Uj7Mk9kIjL6I9Ci9erMg473V1QEXI&callback=initMap"></script>
+  <script src="./js/hotelLocation.js"></script>
+
+</body>
+</html>
